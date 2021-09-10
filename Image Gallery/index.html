@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Galllery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="fullimage">
+        <img src="/img/img (1).jpg" alt="Loading..." id="fullimg">
+        <span onclick="closeimg()">X</span>
+    </div>
+    <div class="head">Responsive <span>Image</span>  Gallery</div>
+    <div class="container">
+        <img src="/img/img (1).jpg" alt="Loading..." onclick="openimg(this.src)">
+         <img src="/img/img (2).jpg" alt="Loading..."onclick="openimg(this.src)">
+         <img src="/img/img (3).jpg" alt="Loading..."onclick="openimg(this.src)">
+         <img src="/img/img (4).jpg" alt="Loading..."onclick="openimg(this.src)">
+         <img src="/img/img (5).jpg" alt="Loading..."onclick="openimg(this.src)">
+         <img src="/img/img (6).jpg" alt="Loading..."onclick="openimg(this.src)">
+         <img src="/img/img (7).jpg" alt="Loading..."onclick="openimg(this.src)">
+         <img src="/img/img (8).jpg" alt="Loading..."onclick="openimg(this.src)">
+         <img src="/img/img (9).jpg" alt="Loading..."onclick="openimg(this.src)">
+         <img src="/img/img (10).jpg" alt="Loading..."onclick="openimg(this.src)">
+         <img src="/img/img (11).jpg" alt="Loading..."onclick="openimg(this.src)">
+         <img src="/img/img (12).jpg" alt="Loading..."onclick="openimg(this.src)">
+         <img src="/img/img (13).jpg" alt="Loading..."onclick="openimg(this.src)">
+         <img src="/img/img (14).jpg" alt="Loading..."onclick="openimg(this.src)">
+         <img src="/img/img (15).jpg" alt="Loading..."onclick="openimg(this.src)">
+         <img src="/img/img (16).jpg" alt="Loading..."onclick="openimg(this.src)">
+         
+    </div>
+
+    <script>
+        const fullimage = document.querySelector('.fullimage');
+        const fullimg = document.getElementById('fullimg');
+
+function openimg(pic){
+    fullimage.style.display="grid";
+    fullimg.src=pic;
+}
+ function closeimg(){
+     fullimage.style.display="none";
+ }
+
+    </script>
+</body>
+</html>
